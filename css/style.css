@@ -1,0 +1,300 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: "KelsonSansRegular", Georgia, Serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+nav {
+	display: block;
+	height: 80px;
+	width: 100%;
+	background-image: url(../img/body.png);
+	background-repeat: repeat;
+}
+.navbar-default {
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	height: inherit;
+}
+.navbar-collapse {
+	padding: 0;
+	margin: 0;
+	height: inherit;
+}
+.navbar-nav {
+	float: none;
+	margin: 0;
+	height: inherit;
+}
+.nav {
+	margin: 0;
+	border-radius: none;
+	height: inherit;
+}
+
+.nav li {
+	position: static;
+}
+
+.icon-home {
+	padding: 0 5px;
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-nav>li>a,
+.nav>li>a {
+	padding: 0;
+	margin: 0;
+	color: #e8e3a1;
+    vertical-align: middle;
+    height: 76px;
+    padding: 12px 0;
+}
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+	color: #e8e3a1;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	height: inherit;
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: #5d8d3c;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #e8e3a1;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #e8e3a1;
+}
+
+
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100vh !important;
+}
+
+#img-slider-1{
+	background-image: url(../img/slider-1.JPG);
+}
+
+#img-slider-2{
+	background-image: url(../img/slider-2.JPG);
+}
+
+#img-slider-3{
+	background-image: url(../img/slider-3.JPG);
+}
+
+.item {
+	background-position: center;
+	-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none;
+}
+
+.carousel-control {
+	opacity: 1;
+	width: 5%;
+	text-align: inherit;
+	text-shadow: none;
+}
+
+.carousel-control:focus,
+.carousel-control:hover {
+	opacity: 1;
+}
+
+.carousel-control>img {
+	width: 100%;
+	top: 50%;
+	margin-top: -35px;
+	position: absolute;
+}
+
+.carousel-control.left>img {
+	left: 20px;
+}
+
+.carousel-control.right>img {
+	right: 20px;
+}
+
+.carousel-indicators>li {
+	width: 30px;
+	height: 30px;
+	/*border: 3px solid #5d8d3c;*/
+	border: none;
+	border-radius: 50%;
+	background-color: #e8e3a1;
+	margin: 0 15px;
+}
+
+.carousel-indicators .active {
+	width: 30px;
+	height: 30px;
+	/*border: 3px solid #e8e3a1;*/
+	border: none;
+	border-radius: 50%;
+	background-color: #5d8d3c;
+	margin: 0 15px;
+}
+
+article {
+	width: 100%;
+	height: auto;
+	background-color: #e8e3a1;
+}
+
+.content {
+	width: 100%;
+	height: auto;
+	padding: 48px 0;
+	overflow: hidden;
+}
+
+.content>h1 {
+	margin: 0;
+    text-align: justify;
+    margin-bottom: 48px;
+    color: #584f3b;
+    font-size: 48px;
+    font-family: "KelsonSansBold", Georgia, Serif;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+
+.information {
+	height: inherit;
+	margin-bottom: 26px;
+	padding-right: 25px;
+}
+
+.information p {
+	margin: 0;
+	padding: 0;
+    font-size: 22px;
+    color: #584f3b;
+    font-family: "Arial", Georgia, Serif;
+    padding-bottom: 35px;
+}
+
+.information a {
+    font-size: 22px;
+    font-family: "KelsonSansRegular", Georgia, Serif;
+    text-transform: uppercase;
+    padding: 25px;
+    text-decoration: none;
+    color: #e8e3a1;
+    background-color: #584f3b;
+    box-shadow: 3px 3px #413b2d;
+    transition: all .3s;
+}
+
+.container-image {
+    padding: 0;
+    padding-left: 10px;
+    height: 340px;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/Oboron_27.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 3px #413b2d;
+}
+
+footer {
+	height: auto;
+	background-image: url(../img/body-footer.png);
+	background-repeat: repeat;
+	color: #e8e3a1;
+	font-size: 12px;
+	line-height: 24px;
+	font-family: "KelsonSansBold", Georgia, Serif;
+}
+
+footer a {
+	text-decoration: none;
+	color: #e8e3a1;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #5d8d3c;
+}
+
+.container-center {
+	width: 100%;
+    text-align: center;
+    display: table;
+}
+
+.icon {
+	margin-top: 10px;
+	display: table-cell;
+}
+
+.icon img {
+	height: 106px;
+}
+
+.icon h4 {
+	font-size: 12px;
+    text-transform: uppercase;
+}
+
+.ministry {
+	margin-top: 10px;
+	display: table-cell;
+}
+
+.ministry ul {
+	width: 200px;
+    display: inline-block;
+}
+
+.ministry ul li {
+	text-align: left;
+}
+
+.address {
+	text-align: center;
+	margin-top: 10px;
+	display: table-cell;
+}
+
+.contacts {
+	text-align: center;
+	margin-top: 10px;
+	display: table-cell;
+}
+
+.authorship {
+	text-align: center;
+}
+
+.title-footer {
+	text-transform: uppercase;
+	font-size: 16px;
+	display: block;
+}
