@@ -1,0 +1,50 @@
+/* font-family: "KelsonSansRegular"; */
+@font-face {
+    font-family: "KelsonSansRegular";
+    src: url("../fonts/KelsonSansRegular/KelsonSansRegular.eot");
+    src: url("../fonts/KelsonSansRegular/KelsonSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/KelsonSansRegular/KelsonSansRegular.woff") format("woff"),
+    url("../fonts/KelsonSansRegular/KelsonSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "KelsonSansLight"; */
+@font-face {
+    font-family: "KelsonSansLight";
+    src: url("../fonts/KelsonSansLight/KelsonSansLight.eot");
+    src: url("../fonts/KelsonSansLight/KelsonSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/KelsonSansLight/KelsonSansLight.woff") format("woff"),
+    url("../fonts/KelsonSansLight/KelsonSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "KelsonSansBold"; */
+@font-face {
+    font-family: "KelsonSansBold";
+    src: url("../fonts/KelsonSansBold/KelsonSansBold.eot");
+    src: url("../fonts/KelsonSansBold/KelsonSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/KelsonSansBold/KelsonSansBold.woff") format("woff"),
+    url("../fonts/KelsonSansBold/KelsonSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansCondensedBold"; */
+@font-face {
+    font-family: "OpenSansCondensedBold";
+    src: url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.eot");
+    src: url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.woff") format("woff"),
+    url("../fonts/OpenSansCondensedBold/OpenSansCondensedBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansCondensedLight"; */
+@font-face {
+    font-family: "OpenSansCondensedLight";
+    src: url("../fonts/OpenSansCondensedLight/OpenSansCondensedLight.eot");
+    src: url("../fonts/OpenSansCondensedLight/OpenSansCondensedLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansCondensedLight/OpenSansCondensedLight.woff") format("woff"),
+    url("../fonts/OpenSansCondensedLight/OpenSansCondensedLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

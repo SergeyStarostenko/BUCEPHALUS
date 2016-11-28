@@ -1,0 +1,143 @@
+@media (max-width: 800px){
+  .carousel, .carousel-inner, .carousel-inner .item {
+    height: 400px;
+  }
+}
+
+@media (min-width: 801px){
+  .carousel,
+  .carousel-inner,
+  .carousel-inner .item {
+    height: 100vh !important;
+  }
+}
+
+@media (max-width: 767px){
+  .navbar-default .navbar-nav>li>a,
+  .navbar-nav>li>a,
+  .nav>li>a {
+    height: auto;
+  }
+}
+
+@media (min-width: 760px){
+  .navbar-collapse{
+    clear: both;
+  }
+  .navbar-collapse ul {
+    /*clear style bootstrap*/
+    padding: 0;
+    margin: 0;
+    /*clear style bootstrap*/
+    width: 100%;
+    text-align: center;
+    display: table;
+    height: 80px;
+  }
+  .navbar-collapse ul li {
+    /*clear style bootstrap*/
+    padding: 0;
+    margin: 0;
+    float: none;
+    /*clear style bootstrap*/
+    display: table-cell;
+  }
+  .navbar-collapse ul li:hover {
+    background-color: #594f3b;
+  }
+  .navbar-collapse ul li::after {
+    float: none;
+  }
+  .navbar-collapse ul li a {
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+  } 
+}
+@media (min-width: 961px){
+  .navbar-collapse ul li a {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 760px) and (max-width: 960px){
+  .navbar-collapse ul li a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 759px) {
+  nav {
+    height: auto;
+  }
+  .nav{
+    padding: 5px 0;
+  }
+  .nav li {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .navbar-collapse ul li a {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    height: 100%;
+  }
+  .carousel-control>img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 330px) {
+  .carousel-indicators {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 900px) {
+    .container {
+      width: 910px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .col-sm-12 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 899px){
+  .content>h1 {
+    font-size: 38px;
+  }
+  .container-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px){
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .content>h1 {
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .information {
+    width: 100%;
+  }
+  .container-image {
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 500px){
+  .content>h1 {
+    font-size: 30px;
+  }
+}
