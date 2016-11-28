@@ -1,3 +1,17 @@
+@media (max-width: 800px){
+  .carousel, .carousel-inner, .carousel-inner .item {
+    height: 400px;
+  }
+}
+
+@media (min-width: 801px){
+  .carousel,
+  .carousel-inner,
+  .carousel-inner .item {
+    height: 100vh !important;
+  }
+}
+
 @media (min-width: 760px){
   .navbar-collapse{
     clear: both;

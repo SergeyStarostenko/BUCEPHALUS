@@ -77,14 +77,6 @@ nav {
 	border-color: #e8e3a1;
 }
 
-
-
-.carousel,
-.carousel-inner,
-.carousel-inner .item {
-  height: 100vh !important;
-}
-
 #img-slider-1{
 	background-image: url(../img/slider-1.JPG);
 }
