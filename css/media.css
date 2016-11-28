@@ -6,9 +6,11 @@
 
 @media (min-width: 801px){
   .carousel,
-  .carousel-inner,
   .carousel-inner .item {
     height: 100vh !important;
+  }
+  .carousel-inner {
+    height: 100%;
   }
 }
 
@@ -41,9 +43,6 @@
     float: none;
     /*clear style bootstrap*/
     display: table-cell;
-  }
-  .navbar-collapse ul li:hover {
-    background-color: #594f3b;
   }
   .navbar-collapse ul li::after {
     float: none;

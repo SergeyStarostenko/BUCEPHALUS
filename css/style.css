@@ -10,12 +10,16 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
-nav {
+.navigation {
 	display: block;
 	height: 80px;
 	width: 100%;
 	background-image: url(../img/body.png);
 	background-repeat: repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99999;
 }
 .navbar-default {
 	background-color: transparent;
@@ -35,8 +39,12 @@ nav {
 }
 .nav {
 	margin: 0;
-	border-radius: none;
+	border-radius: 0;
 	height: inherit;
+}
+
+.navbar {
+    border-radius: 0;
 }
 
 .nav li {
@@ -90,6 +98,10 @@ nav {
 
 #img-slider-3{
 	background-image: url(../img/slider-3.JPG);
+}
+
+.carousel {
+	padding-top: 80px;
 }
 
 .item {
