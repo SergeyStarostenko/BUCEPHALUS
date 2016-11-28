@@ -56,6 +56,9 @@ nav {
     height: 76px;
     padding: 12px 0;
 }
+.navbar-collapse ul li:hover {
+    background-color: #594f3b;
+}
 .navbar-default .navbar-nav>li>a:focus, 
 .navbar-default .navbar-nav>li>a:hover {
 	color: #e8e3a1;
@@ -67,7 +70,7 @@ nav {
 
 .navbar-default .navbar-toggle:focus, 
 .navbar-default .navbar-toggle:hover {
-    background-color: #5d8d3c;
+    background-color: #594f3b;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #e8e3a1;

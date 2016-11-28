@@ -12,6 +12,14 @@
   }
 }
 
+@media (max-width: 767px){
+  .navbar-default .navbar-nav>li>a,
+  .navbar-nav>li>a,
+  .nav>li>a {
+    height: auto;
+  }
+}
+
 @media (min-width: 760px){
   .navbar-collapse{
     clear: both;
@@ -42,7 +50,6 @@
   }
   .navbar-collapse ul li a {
     text-align: center;
-    
     text-transform: uppercase;
     height: 100%;
   } 
