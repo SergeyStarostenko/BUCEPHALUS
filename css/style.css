@@ -12,14 +12,10 @@ html, body {
 }
 .navigation {
 	display: block;
-	height: 80px;
+	height: auto;
 	width: 100%;
 	background-image: url(../img/body.png);
 	background-repeat: repeat;
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 99999;
 }
 .navbar-default {
 	background-color: transparent;
@@ -60,12 +56,10 @@ html, body {
 	padding: 0;
 	margin: 0;
 	color: #e8e3a1;
-    vertical-align: middle;
-    height: 76px;
-    padding: 12px 0;
 }
 .navbar-collapse ul li:hover {
     background-color: #594f3b;
+    cursor: pointer;
 }
 .navbar-default .navbar-nav>li>a:focus, 
 .navbar-default .navbar-nav>li>a:hover {
@@ -98,10 +92,6 @@ html, body {
 
 #img-slider-3{
 	background-image: url(../img/slider-3.JPG);
-}
-
-.carousel {
-	padding-top: 80px;
 }
 
 .item {
@@ -232,6 +222,7 @@ article {
 
 footer {
 	height: auto;
+	overflow-y: hidden;
 	background-image: url(../img/body-footer.png);
 	background-repeat: repeat;
 	color: #e8e3a1;
@@ -251,7 +242,6 @@ footer a:hover {
 }
 
 .container-center {
-	width: 100%;
     text-align: center;
     display: table;
 }
