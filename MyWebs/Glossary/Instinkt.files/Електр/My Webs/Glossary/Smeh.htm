@@ -1,0 +1,512 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="Smeh.files/filelist.xml">
+<link rel=Edit-Time-Data href="Smeh.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Эвристика</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>www</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>www</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>17</o:TotalTime>
+  <o:Created>2007-02-24T17:11:00Z</o:Created>
+  <o:LastSaved>2007-02-24T17:30:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>5</o:Words>
+  <o:Characters>33</o:Characters>
+  <o:Company>Дом</o:Company>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>37</o:CharactersWithSpaces>
+  <o:Version>11.5703</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 5 6 2 2 2 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	color:black;
+	mso-font-kerning:16.0pt;
+	mso-ansi-language:UK;
+	font-weight:bold;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:UK;
+	font-style:italic;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:UK;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+  <o:rules v:ext="edit">
+   <o:r id="V:Rule2" type="callout" idref="#_x0000_s1038"/>
+  </o:rules>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shapetype id="_x0000_t202"
+ coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1028" type="#_x0000_t202" style='position:absolute;
+ margin-left:1.5pt;margin-top:-.75pt;width:564.75pt;height:419.25pt;z-index:1'
+ fillcolor="#fc9">
+ <v:fill src="Smeh.files/image001.jpg" o:title="Папирус" rotate="t" type="tile"/>
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoHeading7><b style='mso-bidi-font-weight:normal'><span lang=UK
+    style='font-size:11.0pt;color:navy'>Служу українському народові!<o:p></o:p></span></b></p>
+    <h1 align=center style='text-align:center'><span lang=UK style='font-size:
+    10.0pt'><o:p>&nbsp;</o:p></span></h1>
+    <h1 align=center style='text-align:center'><span lang=UK style='font-size:
+    10.0pt'><o:p>&nbsp;</o:p></span></h1>
+    <h1 align=center style='text-align:center'><span lang=UK style='font-size:
+    10.0pt'><o:p>&nbsp;</o:p></span></h1>
+    <h1 align=center style='text-align:center'><span lang=UK style='font-size:
+    10.0pt'><o:p>&nbsp;</o:p></span></h1>
+    <h1 align=center style='text-align:center'><span lang=UK style='font-size:
+    14.0pt;color:blue'><span style='mso-spacerun:yes'> </span><span
+    style='mso-spacerun:yes'>                </span>сатирична газета 1 танкової
+    роти №3 від 20.08.2007 року.<o:p></o:p></span></h1>
+    <p class=MsoBodyText><i><span lang=UK style='font-size:14.0pt;color:red'><span
+    style='mso-spacerun:yes'>                                                     
+    </span></span></i><b><i><span lang=UK style='font-size:14.0pt;font-family:
+    "Arial Black";color:red'>“Внутрішній наряд – страж порядку ?”<o:p></o:p></span></i></b></p>
+    <p class=MsoBodyText><i><span lang=UK style='color:navy'><span
+    style='mso-spacerun:yes'>                                     </span><span
+    style='mso-spacerun:yes'>                  </span>(Назва тематики, якій
+    присвячений випуск газети.)<o:p></o:p></span></i></p>
+    <p class=MsoNormal><span lang=UK style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><v:shape id="_x0000_s1029" type="#_x0000_t202" style='position:absolute;
+ margin-left:109.5pt;margin-top:30pt;width:358.65pt;height:88.2pt;z-index:2;
+ mso-wrap-style:none' fillcolor="#fc9" stroked="f">
+ <v:fill src="Smeh.files/image001.jpg" o:title="Папирус" rotate="t" type="tile"/>
+ <v:textbox style='mso-next-textbox:#_x0000_s1029;mso-fit-shape-to-text:t'>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal><v:shapetype id="_x0000_t158" coordsize="21600,21600"
+     o:spt="158" adj="1404,10800" path="m@37@0c@38@3@39@1@40@0@41@3@42@1@43@0m@30@4c@31@5@32@6@33@4@34@5@35@6@36@4e">
+     <v:formulas>
+      <v:f eqn="val #0"/>
+      <v:f eqn="prod @0 41 9"/>
+      <v:f eqn="prod @0 23 9"/>
+      <v:f eqn="sum 0 0 @2"/>
+      <v:f eqn="sum 21600 0 #0"/>
+      <v:f eqn="sum 21600 0 @1"/>
+      <v:f eqn="sum 21600 0 @3"/>
+      <v:f eqn="sum #1 0 10800"/>
+      <v:f eqn="sum 21600 0 #1"/>
+      <v:f eqn="prod @8 1 3"/>
+      <v:f eqn="prod @8 2 3"/>
+      <v:f eqn="prod @8 4 3"/>
+      <v:f eqn="prod @8 5 3"/>
+      <v:f eqn="prod @8 2 1"/>
+      <v:f eqn="sum 21600 0 @9"/>
+      <v:f eqn="sum 21600 0 @10"/>
+      <v:f eqn="sum 21600 0 @8"/>
+      <v:f eqn="sum 21600 0 @11"/>
+      <v:f eqn="sum 21600 0 @12"/>
+      <v:f eqn="sum 21600 0 @13"/>
+      <v:f eqn="prod #1 1 3"/>
+      <v:f eqn="prod #1 2 3"/>
+      <v:f eqn="prod #1 4 3"/>
+      <v:f eqn="prod #1 5 3"/>
+      <v:f eqn="prod #1 2 1"/>
+      <v:f eqn="sum 21600 0 @20"/>
+      <v:f eqn="sum 21600 0 @21"/>
+      <v:f eqn="sum 21600 0 @22"/>
+      <v:f eqn="sum 21600 0 @23"/>
+      <v:f eqn="sum 21600 0 @24"/>
+      <v:f eqn="if @7 @19 0"/>
+      <v:f eqn="if @7 @18 @20"/>
+      <v:f eqn="if @7 @17 @21"/>
+      <v:f eqn="if @7 @16 #1"/>
+      <v:f eqn="if @7 @15 @22"/>
+      <v:f eqn="if @7 @14 @23"/>
+      <v:f eqn="if @7 21600 @24"/>
+      <v:f eqn="if @7 0 @29"/>
+      <v:f eqn="if @7 @9 @28"/>
+      <v:f eqn="if @7 @10 @27"/>
+      <v:f eqn="if @7 @8 @8"/>
+      <v:f eqn="if @7 @11 @26"/>
+      <v:f eqn="if @7 @12 @25"/>
+      <v:f eqn="if @7 @13 21600"/>
+      <v:f eqn="sum @36 0 @30"/>
+      <v:f eqn="sum @4 0 @0"/>
+      <v:f eqn="max @30 @37"/>
+      <v:f eqn="min @36 @43"/>
+      <v:f eqn="prod @0 2 1"/>
+      <v:f eqn="sum 21600 0 @48"/>
+      <v:f eqn="mid @36 @43"/>
+      <v:f eqn="mid @30 @37"/>
+     </v:formulas>
+     <v:path textpathok="t" o:connecttype="custom" o:connectlocs="@40,@0;@51,10800;@33,@4;@50,10800"
+      o:connectangles="270,180,90,0"/>
+     <v:textpath on="t" fitshape="t" xscale="t"/>
+     <v:handles>
+      <v:h position="topLeft,#0" yrange="0,2229"/>
+      <v:h position="#1,bottomRight" xrange="8640,12960"/>
+     </v:handles>
+     <o:lock v:ext="edit" text="t" shapetype="t"/>
+    </v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t158" style='width:336.75pt;
+     height:72.75pt' fillcolor="#396" strokecolor="#009" strokeweight="1pt">
+     <v:fill color2="lime" rotate="t" focus="100%" type="gradient"/>
+     <v:shadow on="t" color="#009" offset="7pt,-7pt"/>
+     <v:textpath style='font-family:"Impact";v-text-spacing:52429f;
+      v-text-kern:t' trim="t" fitpath="t" xscale="f" string="Багнет"/>
+    </v:shape></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><v:shapetype id="_x0000_t71" coordsize="21600,21600" o:spt="71"
+ path="m10800,5800l8352,2295,7312,6320,370,2295,4627,7617,,8615r3722,3160l135,14587r5532,-650l4762,17617,7715,15627r770,5973l10532,14935r2715,4802l14020,14457r4125,3638l16837,12942r4763,348l17607,10475,21097,8137,16702,7315,18380,4457r-4225,868l14522,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="custom" o:connectlocs="14522,0;0,8615;8485,21600;21600,13290"
+  o:connectangles="270,180,90,0" textboxrect="4627,6320,16702,13937"/>
+</v:shapetype><v:shape id="_x0000_s1032" type="#_x0000_t71" style='position:absolute;
+ margin-left:357pt;margin-top:232.8pt;width:204pt;height:169.25pt;z-index:3'
+ fillcolor="#f39">
+ <v:fill color2="#36f" rotate="t" colors="0 #f39;.25 #f63;.5 yellow;.75 #01a78f;1 #36f"
+  method="none" focus="100%" type="gradient"/>
+</v:shape><v:shapetype id="_x0000_t72" coordsize="21600,21600" o:spt="72"
+ path="m11462,4342l9722,1887,8550,6382,4502,3625r870,4192l1172,8270r2763,3322l,12877r3330,2493l1285,17825r3520,415l4917,21600,7527,18125r1173,1587l9872,17370r1740,1472l12180,15935r2762,1435l14640,14350r4237,1282l16380,12310r1890,-1020l16985,9402,21600,6645,16380,6532,18007,3172,14525,5777,14790,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="custom" o:connectlocs="9722,1887;0,12877;11612,18842;21600,6645"
+  o:connectangles="270,180,90,0" textboxrect="5372,6382,14640,15935"/>
+</v:shapetype><v:shape id="_x0000_s1033" type="#_x0000_t72" style='position:absolute;
+ margin-left:18pt;margin-top:137.3pt;width:214.5pt;height:182.25pt;z-index:4'
+ fillcolor="#fff200">
+ <v:fill color2="#4d0808" rotate="t" colors="0 #fff200;29491f #ff7a00;45875f #ff0300;1 #4d0808"
+  method="none" focus="-50%" type="gradient"/>
+</v:shape><v:shapetype id="_x0000_t73" coordsize="21600,21600" o:spt="73"
+ path="m8472,l,3890,7602,8382,5022,9705r7200,4192l10012,14915r11588,6685l14767,12877r1810,-870l11050,6797r1810,-717xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path o:connecttype="custom" o:connectlocs="8472,0;0,3890;5022,9705;10012,14915;21600,21600;16577,12007;12860,6080"
+  o:connectangles="270,270,180,180,90,0,0" textboxrect="8757,7437,13917,14277"/>
+</v:shapetype><v:shape id="_x0000_s1037" type="#_x0000_t73" style='position:absolute;
+ margin-left:9.75pt;margin-top:12.3pt;width:146.25pt;height:105.9pt;z-index:5'
+ fillcolor="#f39">
+ <v:fill color2="#36f" rotate="t" colors="0 #f39;.25 #f63;.5 yellow;.75 #01a78f;1 #36f"
+  method="none" focus="-50%" type="gradient"/>
+</v:shape><v:shapetype id="_x0000_t106" coordsize="21600,21600" o:spt="106"
+ adj="1350,25920" path="ar,7165,4345,13110,1950,7185,1080,12690,475,11732,4835,17650,1080,12690,2910,17640,2387,9757,10107,20300,2910,17640,8235,19545,7660,12382,14412,21597,8235,19545,14280,18330,12910,11080,18695,18947,14280,18330,18690,15045,14822,5862,21597,15082,18690,15045,20895,7665,15772,2592,21105,9865,20895,7665,19140,2715,14330,,19187,6595,19140,2715,14910,1170,10992,,15357,5945,14910,1170,11250,1665,6692,650,12025,7917,11250,1665,7005,2580,1912,1972,8665,11162,7005,2580,1950,7185xear,7165,4345,13110,1080,12690,2340,13080nfear475,11732,4835,17650,2910,17640,3465,17445nfear7660,12382,14412,21597,7905,18675,8235,19545nfear7660,12382,14412,21597,14280,18330,14400,17370nfear12910,11080,18695,18947,18690,15045,17070,11475nfear15772,2592,21105,9865,20175,9015,20895,7665nfear14330,,19187,6595,19200,3345,19140,2715nfear14330,,19187,6595,14910,1170,14550,1980nfear10992,,15357,5945,11250,1665,11040,2340nfear1912,1972,8665,11162,7650,3270,7005,2580nfear1912,1972,8665,11162,1950,7185,2070,7890nfem@23@37qx@35@24@23@36@34@24@23@37xem@16@33qx@31@17@16@32@30@17@16@33xem@38@29qx@27@39@38@28@26@39@38@29xe">
+ <v:formulas>
+  <v:f eqn="sum #0 0 10800"/>
+  <v:f eqn="sum #1 0 10800"/>
+  <v:f eqn="cosatan2 10800 @0 @1"/>
+  <v:f eqn="sinatan2 10800 @0 @1"/>
+  <v:f eqn="sum @2 10800 0"/>
+  <v:f eqn="sum @3 10800 0"/>
+  <v:f eqn="sum @4 0 #0"/>
+  <v:f eqn="sum @5 0 #1"/>
+  <v:f eqn="mod @6 @7 0"/>
+  <v:f eqn="prod 600 11 1"/>
+  <v:f eqn="sum @8 0 @9"/>
+  <v:f eqn="prod @10 1 3"/>
+  <v:f eqn="prod 600 3 1"/>
+  <v:f eqn="sum @11 @12 0"/>
+  <v:f eqn="prod @13 @6 @8"/>
+  <v:f eqn="prod @13 @7 @8"/>
+  <v:f eqn="sum @14 #0 0"/>
+  <v:f eqn="sum @15 #1 0"/>
+  <v:f eqn="prod 600 8 1"/>
+  <v:f eqn="prod @11 2 1"/>
+  <v:f eqn="sum @18 @19 0"/>
+  <v:f eqn="prod @20 @6 @8"/>
+  <v:f eqn="prod @20 @7 @8"/>
+  <v:f eqn="sum @21 #0 0"/>
+  <v:f eqn="sum @22 #1 0"/>
+  <v:f eqn="prod 600 2 1"/>
+  <v:f eqn="sum #0 600 0"/>
+  <v:f eqn="sum #0 0 600"/>
+  <v:f eqn="sum #1 600 0"/>
+  <v:f eqn="sum #1 0 600"/>
+  <v:f eqn="sum @16 @25 0"/>
+  <v:f eqn="sum @16 0 @25"/>
+  <v:f eqn="sum @17 @25 0"/>
+  <v:f eqn="sum @17 0 @25"/>
+  <v:f eqn="sum @23 @12 0"/>
+  <v:f eqn="sum @23 0 @12"/>
+  <v:f eqn="sum @24 @12 0"/>
+  <v:f eqn="sum @24 0 @12"/>
+  <v:f eqn="val #0"/>
+  <v:f eqn="val #1"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" o:connecttype="custom" o:connectlocs="67,10800;10800,21577;21582,10800;10800,1235;@38,@39"
+  textboxrect="2977,3262,17087,17337"/>
+ <v:handles>
+  <v:h position="#0,#1"/>
+ </v:handles>
+ <o:complex v:ext="view"/>
+</v:shapetype><v:shape id="_x0000_s1038" type="#_x0000_t106" style='position:absolute;
+ margin-left:13.5pt;margin-top:183.75pt;width:543.75pt;height:202.5pt;
+ z-index:6' adj="20438,-1365" fillcolor="#5e9eff">
+ <v:fill color2="#ffebfa" rotate="t" colors="0 #5e9eff;26214f #85c2ff;45875f #c4d6eb;1 #ffebfa"
+  method="none" focus="50%" type="gradient"/>
+ <v:textbox style='mso-next-textbox:#_x0000_s1038'>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+    font-family:"Arial Narrow"'><span style='mso-spacerun:yes'>      </span></span><b
+    style='mso-bidi-font-weight:normal'><span lang=UK style='font-size:10.0pt;
+    font-family:"Arial Narrow";color:navy;mso-ansi-language:UK'>Сатирична
+    газета підрозділу випускається як додаток до стінної газети, не менше ніж
+    один раз на місяць, редакційною колегією в складі<span
+    style='mso-spacerun:yes'>    </span>2 – 3 військовослужбовців. Редакційна
+    колегія вибирається на загальних зборах особового складу. В сатиричній
+    газеті бажано мати 4 тематики (по одній з кожного взводу і одну за подіями
+    в роті). Кожний малюнок (карикатура) повинен розкривати тему, не принижуючи
+    гідність людини, на свідомість якої він впливає. Під кожним малюнком
+    робиться надпис – хто зображений, що він робить всупереч встановленого
+    порядку або моралі. В правому нижньому куту записуються прізвища
+    редакційної колегії. Сатиричну газету переглядає командир роти і на звороті
+    робить відповідний надпис. Сатиричні газети зберігаються терміном один рік.<o:p></o:p></span></b></p>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=UK
+    style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></b></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><v:shape id="_x0000_s1043" type="#_x0000_t202" style='position:absolute;
+ margin-left:390pt;margin-top:386.25pt;width:162.75pt;height:25.5pt;z-index:7'
+ fillcolor="#fc9" stroked="f">
+ <v:fill src="Smeh.files/image001.jpg" o:title="Папирус" rotate="t" type="tile"/>
+ <v:textbox>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=UK
+    style='font-size:11.0pt;font-family:"Arial Narrow";mso-ansi-language:UK'>Редколегія</span></b><span
+    lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+relative;z-index:1'><span style='position:absolute;left:1px;top:-2px;
+width:759px;height:565px'><img width=759 height=565
+src="Smeh.files/image002.gif" v:shapes="_x0000_s1028 _x0000_s1029 _x0000_s1032 _x0000_s1033 _x0000_s1037 _x0000_s1038 _x0000_s1043"></span></span><![endif]><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span lang=UK
+style='mso-ansi-language:UK'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,581 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List href="Nastriy.files/filelist.xml">
+<title>Эвристика</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>www</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Геннадий</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>13</o:TotalTime>
+  <o:Created>2016-11-23T12:19:00Z</o:Created>
+  <o:LastSaved>2016-11-23T12:20:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>345</o:Words>
+  <o:Characters>1969</o:Characters>
+  <o:Company>Дом</o:Company>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2310</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="Nastriy.files/themedata.thmx">
+<link rel=colorSchemeMapping href="Nastriy.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>90</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>RU</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1593833729 1073750107 16 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:UK;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:UK;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:UK;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:UK;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="6146">
+  <o:colormenu v:ext="edit" strokecolor="none"/>
+ </o:shapedefaults></xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="#FFFFCC" background="Nastriy.files/image001.jpg" lang=RU
+style='tab-interval:35.4pt'>
+<!--[if gte mso 9]><xml>
+ <v:background id="_x0000_s1025" o:bwmode="white" fillcolor="#ffc">
+  <v:fill src="Nastriy.files/image001.jpg" o:title="Полотно" type="tile"/>
+ </v:background></xml><![endif]-->
+
+<div class=Section1>
+
+<p class=MsoNormal style='text-align:justify;text-indent:1.0cm'><span
+class=SpellE><b style='mso-bidi-font-weight:normal'><span style='font-size:
+20.0pt;mso-bidi-font-size:12.0pt;font-family:"Verdana","sans-serif"'>Настрій</span></b></span><span
+style='font-size:20.0pt;mso-bidi-font-size:12.0pt;font-family:"Verdana","sans-serif"'>
+- <span class=SpellE>відносно</span> <span class=SpellE>тривалий</span>, <span
+class=SpellE><span class=GramE>ст</span>ійкий</span> <span class=SpellE>психічний</span>
+стан <span class=SpellE>помірної</span> <span class=SpellE>або</span> <span
+class=SpellE>слабкої</span> <span class=SpellE>інтенсивності</span>, <span
+class=SpellE>що</span> <span class=SpellE>виявляється</span> як <span
+class=SpellE>позитивне</span> <span class=SpellE>або</span> <span class=SpellE>негативне</span>
+<span class=SpellE>емоційне</span> <span class=SpellE>тло</span> <span
+class=SpellE>психічного</span> <span class=SpellE>життя</span> <span
+class=SpellE>військовослужбовця</span>. <span class=SpellE>Настрій</span> <span
+class=SpellE>може</span> бути <span class=SpellE>радісним</span> <span
+class=SpellE>або</span> <span class=SpellE>сумним</span>, <span class=SpellE>бадьорим</span>
+<span class=SpellE>або</span> <span class=SpellE>млявим</span>, <span
+class=SpellE>тривожним</span> <span class=SpellE>тощо</span>. <span
+class=SpellE>Джерелом</span> <span class=SpellE>виникнення</span> того <span
+class=SpellE>чи</span> <span class=SpellE>іншого</span> настрою<span
+class=GramE> <span class=SpellE>є</span>,</span> як правило, стан <span
+class=SpellE>здоров'я</span> <span class=SpellE>або</span> становище <span
+class=SpellE>воїна</span> у <span class=SpellE>військовому</span> <span
+class=SpellE>колективі</span>; <span class=SpellE>задоволений</span> <span
+class=SpellE>чи</span> не <span class=SpellE>задоволений</span> <span
+class=SpellE>він</span> <span class=SpellE>своєю</span> <span class=SpellE>роллю</span>
+на <span class=SpellE>службі</span>. <span class=SpellE>Настрій</span> <span
+class=SpellE>певною</span> <span class=SpellE>мірою</span> <span class=SpellE>залежить</span>
+<span class=SpellE>і</span> <span class=SpellE>від</span> <span class=SpellE>його</span>
+<span class=SpellE>фізичного</span> стану.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:1.0cm'><span
+class=SpellE><b style='mso-bidi-font-weight:normal'><span style='font-size:
+20.0pt;mso-bidi-font-size:12.0pt;font-family:"Verdana","sans-serif"'>Афект</span></b></span><span
+style='font-size:20.0pt;mso-bidi-font-size:12.0pt;font-family:"Verdana","sans-serif"'>
+- <span class=SpellE>сильний</span> <span class=SpellE>і</span> <span
+class=SpellE>відносно</span> <span class=SpellE>короткочасний</span> <span
+class=SpellE>емоційний</span> стан, <span class=SpellE>пов'язаний</span> <span
+class=SpellE>з</span> <span class=SpellE><span class=GramE>р</span>ізкою</span>
+<span class=SpellE>зміною</span> <span class=SpellE>важливих</span> для <span
+class=SpellE>воїна</span> <span class=SpellE>життєвих</span> <span
+class=SpellE>обставин</span>; <span class=SpellE>характеризується</span> <span
+class=SpellE>яскраво</span> <span class=SpellE>вираженими</span> <span
+class=SpellE>рухами</span> та <span class=SpellE>змінами</span> у <span
+class=SpellE>функціях</span> <span class=SpellE>внутрішніх</span> <span
+class=SpellE>органів</span>. В <span class=SpellE>основі</span> <span
+class=SpellE>афекту</span> <span class=SpellE>лежить</span> <span class=SpellE>внутрішній</span>
+<span class=SpellE>конфлікт</span>, <span class=SpellE>породжуваний</span> <span
+class=SpellE>або</span> <span class=SpellE>суперечностями</span> <span
+class=SpellE>між</span> потягами, <span class=SpellE>прагненнями</span>, <span
+class=SpellE>бажаннями</span> <span class=SpellE>воїна</span>, <span
+class=SpellE>або</span> <span class=SpellE>суперечностями</span> <span
+class=SpellE>між</span> <span class=SpellE>вимогами</span> <span class=SpellE>командирів</span>
+до <span class=SpellE><span class=GramE>п</span>ідлеглого</span> <span
+class=SpellE>і</span> <span class=SpellE>можливостями</span> <span
+class=SpellE>виконати</span> <span class=SpellE>ці</span> <span class=SpellE>вимоги</span>.
+<span class=SpellE>Афект</span> <span class=SpellE>розвивається</span> в <span
+class=SpellE>критичних</span> <span class=SpellE>умовах</span> бою, коли <span
+class=SpellE><span class=GramE>во</span>їн</span> не <span class=SpellE>здатен</span>
+<span class=SpellE>знайти</span> <span class=SpellE>адекватний</span> <span
+class=SpellE>вихід</span> <span class=SpellE>із</span> <span class=SpellE>небезпечних</span>,
+часто <span class=SpellE>несподіваних</span> <span class=SpellE>ситуацій</span>.
+<span class=SpellE>Запобіганню</span> <span class=SpellE>афектів</span> <span
+class=SpellE>допомагає</span> <span class=SpellE>статутна</span> <span
+class=SpellE>організація</span> <span class=SpellE>військової</span> <span
+class=SpellE>діяльності</span>, <span class=SpellE>розвинена</span> воля, <span
+class=SpellE>уміння</span> <span class=SpellE>управляти</span> собою.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:1.0cm'><span
+class=SpellE><span class=GramE><span style='font-size:20.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Verdana","sans-serif";letter-spacing:-.2pt'>П</span></span><span
+style='font-size:20.0pt;mso-bidi-font-size:12.0pt;font-family:"Verdana","sans-serif";
+letter-spacing:-.2pt'>ід</span></span><span style='font-size:20.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Verdana","sans-serif";letter-spacing:-.2pt'> <span
+class=SpellE><b style='mso-bidi-font-weight:normal'>стресом</b></span> <span
+class=SpellE>розуміють</span> <span class=SpellE>емоційний</span> стан, <span
+class=SpellE>зумовлений</span> <span class=SpellE>ситуаціями</span> <span
+class=SpellE>надто</span> сильного <span class=SpellE>напруження</span> - <span
+class=SpellE>загрозою</span> <span class=SpellE>життю</span>, <span
+class=SpellE>фізичним</span> <span class=SpellE>і</span> <span class=SpellE>розумовим</span>
+<span class=SpellE>напруженням</span>, страхом, потребою <span class=SpellE>швидко</span>
+<span class=SpellE>ухвалювати</span> <span class=SpellE>відповідальні</span> <span
+class=SpellE>рішення</span>. <span class=SpellE>Під</span> <span class=SpellE><span
+class=GramE>д</span>ією</span> <span class=SpellE>стресу</span> у <span
+class=SpellE>воїна</span> <span class=SpellE>змінюється</span> <span
+class=SpellE>поведінка</span>, вона <span class=SpellE>стає</span> <span
+class=SpellE>дезорганізованою</span>, <span class=SpellE>безладною</span>. <span
+class=SpellE>Спостерігаються</span> <span class=SpellE>також</span> <span
+class=SpellE>протилежні</span> <span class=SpellE>зміни</span> <span
+class=SpellE><span class=GramE>св</span>ідомості</span> - <span class=SpellE>загальмованість</span>,
+<span class=SpellE>пасивність</span>, <span class=SpellE>бездіяльність</span>. <span
+class=SpellE>Зміна</span> <span class=SpellE>поведінки</span> <span
+class=SpellE>воїна</span> <span class=SpellE>є</span> <span class=SpellE>своє<span
+class=GramE>р</span>ідним</span> <span class=SpellE>захистом</span> <span
+class=SpellE>його</span> <span class=SpellE>організму</span> <span
+class=SpellE>від</span> <span class=SpellE>надто</span> <span class=SpellE>сильних</span>
+<span class=SpellE>подразників</span>. <span class=SpellE>Лише</span> <span
+class=SpellE>рішучі</span> та <span class=SpellE>спокійні</span> люди, як
+правило, <span class=SpellE>можуть</span> <span class=SpellE>регулювати</span> <span
+class=SpellE>і</span> <span class=SpellE>контролювати</span> свою <span
+class=SpellE>поведінку</span> в <span class=SpellE>стресовій</span> <span
+class=SpellE>ситуації</span>. Але часто <span class=SpellE>такі</span> <span
+class=SpellE>ситуації</span> <span class=SpellE>змінюють</span> <span
+class=SpellE>психічні</span> <span class=SpellE>властивості</span> <span
+class=SpellE>особистості</span> <span class=SpellE>військовослужбовців</span>, <span
+class=SpellE>які</span> <span class=SpellE>стають</span> <span class=SpellE>більш</span>
+<span class=SpellE>сприйнятливими</span> до <span class=SpellE>негативних</span>
+<span class=SpellE>впливів</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:1.0cm'><span
+style='font-size:20.0pt;mso-bidi-font-size:12.0pt;font-family:"Verdana","sans-serif"'>Силу
+<span class=SpellE>впливу</span> <span class=SpellE>стресового</span> <span
+class=SpellE>подразнення</span> <span class=SpellE>визначають</span> <span
+class=SpellE>такі</span> <span class=SpellE>чинники</span>: реальна <span
+class=SpellE>загроза</span> <span class=SpellE>життю</span>, <span
+class=SpellE>інтенсивність</span> <span class=SpellE>бойово</span>! <span
+class=SpellE>напруженості</span>, <span class=SpellE>психічний</span> стан <span
+class=SpellE>бійця</span>, <span class=SpellE>досвід</span> <span class=SpellE><span
+class=GramE>д</span>іяльності</span> у <span class=SpellE>критичних</span> <span
+class=SpellE>ситуаціях</span> <span class=SpellE>тощо</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:1.0cm'><span
+class=SpellE><span style='font-size:20.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Verdana","sans-serif";letter-spacing:-.2pt'>Однією</span></span><span
+style='font-size:20.0pt;mso-bidi-font-size:12.0pt;font-family:"Verdana","sans-serif";
+letter-spacing:-.2pt'> <span class=SpellE>з</span> форм <span class=SpellE>стресу</span>
+<span class=SpellE>є</span> <span class=SpellE><b style='mso-bidi-font-weight:
+normal'>фрустрація</b></span> - <span class=SpellE>емоційний</span> стан <span
+class=SpellE>особистості</span>, <span class=SpellE>що</span> <span
+class=SpellE>виникає</span> <span class=SpellE>внаслідок</span> <span
+class=SpellE>непереборної</span> <span class=SpellE>перешкоди</span> на шляху
+до <span class=SpellE>задоволення</span> потреби. <span class=SpellE>Фрустрація</span>
+<span class=SpellE>спричинює</span> <span class=SpellE><span class=GramE>р</span>ізні</span>
+<span class=SpellE>зміни</span> <span class=SpellE>поведінки</span> <span
+class=SpellE>воїна</span>. <span class=SpellE>Це</span> <span class=SpellE>може</span>
+бути <span class=SpellE>агресія</span> <span class=SpellE>або</span> <span
+class=SpellE>депресія</span>.</span><span style='font-size:22.0pt;mso-bidi-font-size:
+12.0pt;font-family:"Verdana","sans-serif";letter-spacing:-.2pt'> <o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='tab-stops:471.75pt'><span style='mso-tab-count:1'>                                                                                                                                                             </span><span
+lang=UK style='mso-ansi-language:UK'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:471.75pt'><span lang=UK style='mso-ansi-language:
+UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:432.75pt'><span lang=UK style='mso-ansi-language:
+UK'><span style='mso-tab-count:1'>                                                                                                                                                </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:432.75pt'><span lang=UK style='mso-ansi-language:
+UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:471.75pt'><span lang=UK style='mso-ansi-language:
+UK'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:471.75pt'><span lang=UK style='mso-ansi-language:
+UK'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
